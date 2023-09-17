@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="scriptc.js"></script>
+  <title>Face Recognition</title>
+  <style>
+
+      /* Header/Logo Title */
+.header {
+  background-size: cover;
+  background:#352078;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:7.5vh;
+  border-bottom:#2B8AFF 3px solid;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+    body {
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #faf2f9;
+  margin: 0; 
+  height: 100%;
+
+}
+    body {
+  background-size: cover;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  background-color: #faf2f9;;
+  margin: 0; 
+  height: 100%;
+}
+h1 {
+  font-size: 80px;
+}
+
+
+input::file-selector-button {
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #ffffff,
+    #352078 100%,
+    #352078 200%
+  );
+  background-position-x: 0%;
+  background-size: 200%;
+  border: 50;
+  border-radius: 20px;
+  color: #000000;
+  padding: 1rem 1.25rem;
+  font-size: 30px;
+  width: 300px;
+  height: 100px;;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+}
+input::file-selector-button:hover {
+  background-position-x: 100%;
+  transform: scale(1.1);
+}
+button {
+  background-color: #352078 ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  font-size:x-large;
+  border-radius: 20px;
+  margin-right: 50px;
+  border: none;
+  cursor: pointer;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #352078 ;
+  border-radius: 50%;
+  border-top: 16px solid #dfa2a2;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+
+
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+   <h1>SMART ATTENDANCE SYSTEM</h1>
+   <h2>CLASS III</h2>
+  </div>
+  &nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+&nbsp
+<div id="container">
+
+  <input type="file" id="imageUpload">
+  &nbsp
+  &nbsp
+  &nbsp
+  &nbsp
+  &nbsp
+
+  <button id="Downloadbutton">Download
+    <button id="Mailbutton">Mail
+      <div id="loader"></div>
+
+      
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  
+  
+</div>  
+</body>
+</html>
